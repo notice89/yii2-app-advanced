@@ -14,6 +14,13 @@ return [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        '@mdm/rbac' => '@vendor/yiisoft/yii2/rbac',
+    ],
+    'modules' => [
+        'admin' => [
+            'class' => 'mdm\admin\Module',
+            // other available values are 'right-menu' and 'top-menu'
+        ]
     ],
     'controllerMap' => [
         'fixture' => [
@@ -30,6 +37,9 @@ return [
                 ],
             ],
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
+        ]
     ],
     'params' => $params,
 ];
