@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "651faadd8f4a57a1c42ba3f0fc35fc3e",
+    "content-hash": "4509d632e8863817c341bc4b2b890a7c",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -71,6 +71,25 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "bower-asset/flat-ui",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:designmodo/Flat-UI.git",
+                "reference": "8e35fb5360f38fbabf581617052b69a261c01466"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/designmodo/Flat-UI/zipball/8e35fb5360f38fbabf581617052b69a261c01466",
+                "reference": "8e35fb5360f38fbabf581617052b69a261c01466",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/videojs": "~4.7.2"
+            },
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/inputmask",
@@ -147,6 +166,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/bestiejs/punycode.js/zipball/38c8d3131a82567bfef18da09f7f4db68c84f8a3",
                 "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3",
+                "shasum": null
+            },
+            "type": "bower-asset"
+        },
+        {
+            "name": "bower-asset/videojs",
+            "version": "v4.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/videojs/video.js.git",
+                "reference": "760eb308db573022d6a96ee67bed9d205cde2aca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/videojs/video.js/zipball/760eb308db573022d6a96ee67bed9d205cde2aca",
+                "reference": "760eb308db573022d6a96ee67bed9d205cde2aca",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -2392,6 +2427,44 @@
             "time": "2018-11-12T12:35:44+00:00"
         },
         {
+            "name": "phpspec/php-diff",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpspec/php-diff.git",
+                "reference": "0464787bfa7cd13576c5a1e318709768798bec6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/0464787bfa7cd13576c5a1e318709768798bec6a",
+                "reference": "0464787bfa7cd13576c5a1e318709768798bec6a",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Diff": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Boulton",
+                    "homepage": "http://github.com/chrisboulton"
+                }
+            ],
+            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
+            "time": "2016-04-07T12:29:16+00:00"
+        },
+        {
             "name": "rmrevin/yii2-fontawesome",
             "version": "2.x-dev",
             "source": {
@@ -2741,6 +2814,59 @@
             "time": "2019-02-06T07:57:58+00:00"
         },
         {
+            "name": "tunecino/yii2-schema-builder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tunecino/yii2-schema-builder.git",
+                "reference": "9053675bd06b2227085f1de3c527b28afe312456"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tunecino/yii2-schema-builder/zipball/9053675bd06b2227085f1de3c527b28afe312456",
+                "reference": "9053675bd06b2227085f1de3c527b28afe312456",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/flat-ui": "2.3.*",
+                "yii2tech/filedb": "^1.0",
+                "yiisoft/yii2": ">=2.0.4",
+                "yiisoft/yii2-bootstrap": "~2.0",
+                "yiisoft/yii2-gii": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "tunecino\\builder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Salem Ouerdani",
+                    "email": "tunecino@gmail.com"
+                }
+            ],
+            "description": "GUI built on top of Gii, migration tool, and other extensions to quickly prototype and generate working apps",
+            "keywords": [
+                "builder",
+                "extension",
+                "schema",
+                "workbench",
+                "yii2"
+            ],
+            "time": "2017-07-26T13:29:33+00:00"
+        },
+        {
             "name": "warrence/yii2-kartikgii",
             "version": "dev-master",
             "source": {
@@ -2779,6 +2905,54 @@
             ],
             "description": "Gii Generator base on Kartik-V extension https://github.com/kartik-v",
             "time": "2016-11-19T10:09:37+00:00"
+        },
+        {
+            "name": "yii2tech/filedb",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2tech/filedb.git",
+                "reference": "196174624326dc3864f1276e8934cde7a9b250fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2tech/filedb/zipball/196174624326dc3864f1276e8934cde7a9b250fc",
+                "reference": "196174624326dc3864f1276e8934cde7a9b250fc",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.14"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii2tech\\filedb\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "Provides ActiveRecord interface for data declared in static files",
+            "keywords": [
+                "active",
+                "filedb",
+                "record",
+                "static",
+                "yii2"
+            ],
+            "time": "2018-04-09T08:12:49+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -2997,6 +3171,57 @@
                 "yii2"
             ],
             "time": "2019-05-28T08:14:44+00:00"
+        },
+        {
+            "name": "yiisoft/yii2-gii",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-gii.git",
+                "reference": "7cde5c00c7aeaf1a9d56599445b4b92ebb6edb6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/7cde5c00c7aeaf1a9d56599445b4b92ebb6edb6d",
+                "reference": "7cde5c00c7aeaf1a9d56599445b4b92ebb6edb6d",
+                "shasum": ""
+            },
+            "require": {
+                "phpspec/php-diff": "^1.1.0",
+                "yiisoft/yii2": "~2.0.14"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<7",
+                "yiisoft/yii2-coding-standards": "~2.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\gii\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                }
+            ],
+            "description": "The Gii extension for the Yii framework",
+            "keywords": [
+                "code generator",
+                "gii",
+                "yii2"
+            ],
+            "time": "2019-05-23T16:28:47+00:00"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -3557,6 +3782,56 @@
             "time": "2019-05-26T12:43:51+00:00"
         },
         {
+            "name": "insolita/yii2-migration-generator",
+            "version": "3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Insolita/yii2-migrik.git",
+                "reference": "17e79a78d8a5b4abd0e1f88fa03b861b0ef37f3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Insolita/yii2-migrik/zipball/17e79a78d8a5b4abd0e1f88fa03b861b0ef37f3a",
+                "reference": "17e79a78d8a5b4abd0e1f88fa03b861b0ef37f3a",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": ">=2.0.14"
+            },
+            "require-dev": {
+                "yiisoft/yii2-gii": "*"
+            },
+            "suggest": {
+                "nesbot/carbon": "for testing ",
+                "vlucas/phpdotenv": "for testing"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "insolita\\migrik\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "insolita\\migrik\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "insolita",
+                    "email": "donnainsolita@gmail.com"
+                }
+            ],
+            "description": "Set of gii tools for generating  files for migration by schema of table , phpdoc or table data",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2018-12-20T00:11:12+00:00"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.x-dev",
             "source": {
@@ -3857,44 +4132,6 @@
                 }
             ],
             "time": "2017-07-14T14:27:02+00:00"
-        },
-        {
-            "name": "phpspec/php-diff",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpspec/php-diff.git",
-                "reference": "0464787bfa7cd13576c5a1e318709768798bec6a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/0464787bfa7cd13576c5a1e318709768798bec6a",
-                "reference": "0464787bfa7cd13576c5a1e318709768798bec6a",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Diff": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Boulton",
-                    "homepage": "http://github.com/chrisboulton"
-                }
-            ],
-            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
-            "time": "2016-04-07T12:29:16+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -5064,12 +5301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "3b57eeca9d5c9c2524f36278e50cc4e0af6fafd4"
+                "reference": "e2fe1002fda9ed42a97b75a2d939d9536e24b2c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/3b57eeca9d5c9c2524f36278e50cc4e0af6fafd4",
-                "reference": "3b57eeca9d5c9c2524f36278e50cc4e0af6fafd4",
+                "url": "https://api.github.com/repos/symfony/console/zipball/e2fe1002fda9ed42a97b75a2d939d9536e24b2c1",
+                "reference": "e2fe1002fda9ed42a97b75a2d939d9536e24b2c1",
                 "shasum": ""
             },
             "require": {
@@ -5080,7 +5317,7 @@
             },
             "conflict": {
                 "symfony/dependency-injection": "<3.4",
-                "symfony/event-dispatcher": "<4.3",
+                "symfony/event-dispatcher": "<4.3|>=5",
                 "symfony/process": "<3.3"
             },
             "provide": {
@@ -5090,7 +5327,7 @@
                 "psr/log": "~1.0",
                 "symfony/config": "^3.4|^4.0|^5.0",
                 "symfony/dependency-injection": "^3.4|^4.0|^5.0",
-                "symfony/event-dispatcher": "^4.3|^5.0",
+                "symfony/event-dispatcher": "^4.3",
                 "symfony/lock": "^3.4|^4.0|^5.0",
                 "symfony/process": "^3.4|^4.0|^5.0",
                 "symfony/var-dumper": "^4.3|^5.0"
@@ -5131,7 +5368,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-28T15:53:17+00:00"
+            "time": "2019-05-30T16:10:19+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -5192,12 +5429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "c4c2699fdfeb0edd8d8af949cc106569e180a7ac"
+                "reference": "2a98f2653e13221c15678d1ffaa516d7ce034c42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/c4c2699fdfeb0edd8d8af949cc106569e180a7ac",
-                "reference": "c4c2699fdfeb0edd8d8af949cc106569e180a7ac",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/2a98f2653e13221c15678d1ffaa516d7ce034c42",
+                "reference": "2a98f2653e13221c15678d1ffaa516d7ce034c42",
                 "shasum": ""
             },
             "require": {
@@ -5245,7 +5482,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-28T15:53:17+00:00"
+            "time": "2019-05-31T18:55:48+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -5253,12 +5490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "1870cf704af6576d9509d5ab5723b46e24c35e92"
+                "reference": "993d54248f4b05b9597cea0e45475b87cd1edf21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/1870cf704af6576d9509d5ab5723b46e24c35e92",
-                "reference": "1870cf704af6576d9509d5ab5723b46e24c35e92",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/993d54248f4b05b9597cea0e45475b87cd1edf21",
+                "reference": "993d54248f4b05b9597cea0e45475b87cd1edf21",
                 "shasum": ""
             },
             "require": {
@@ -5315,7 +5552,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-28T15:53:17+00:00"
+            "time": "2019-05-30T16:10:19+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -5854,57 +6091,6 @@
                 "yii2"
             ],
             "time": "2019-05-23T16:00:45+00:00"
-        },
-        {
-            "name": "yiisoft/yii2-gii",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "d1c18f0dcbd72ab285acd320c56b1aa2554e06fa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/d1c18f0dcbd72ab285acd320c56b1aa2554e06fa",
-                "reference": "d1c18f0dcbd72ab285acd320c56b1aa2554e06fa",
-                "shasum": ""
-            },
-            "require": {
-                "phpspec/php-diff": "^1.1.0",
-                "yiisoft/yii2": "~2.0.14"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "<7",
-                "yiisoft/yii2-coding-standards": "~2.0"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\gii\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com"
-                }
-            ],
-            "description": "The Gii extension for the Yii framework",
-            "keywords": [
-                "code generator",
-                "gii",
-                "yii2"
-            ],
-            "time": "2019-03-17T19:23:15+00:00"
         }
     ],
     "aliases": [],

@@ -7,6 +7,8 @@ $params = array_merge(
 );
 
 return [
+    'layoutPath' => '@backend/themes/adminlte',
+    'layout' => 'main.php',
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
@@ -16,11 +18,35 @@ return [
         // for example: '@mdm/admin' => '@app/extensions/mdm/yii2-admin-2.0.0',
   
     ],
+    
     'modules' => [
         'admin' => [
             'class' => 'mdm\admin\Module',
             'layout' => 'left-menu', // defaults to null, using the application's layout without the menu
             // other available values are 'right-menu' and 'top-menu'
+        ],
+        'gii'=>[
+            'class'=>'yii\gii\Module',
+            'generators'=>[
+                'kartikgii-crud' => [
+                    'class' => 'warrence\kartikgii\crud\Generator'
+                ],
+                'migrik' => [
+                    'class' => \insolita\migrik\gii\StructureGenerator::class,
+                    'templates' => [
+                        'custom' => '@backend/gii/templates/migrator_schema',
+                    ],
+                ],
+                'migrikdata' => [
+                    'class' => \insolita\migrik\gii\DataGenerator::class,
+                    'templates' => [
+                        'custom' => '@backend/gii/templates/migrator_data',
+                    ],
+                ],
+            ]
+        ],
+        'builder'=>[
+            'class' => 'tunecino\builder\Module',
         ]
     ],
     'components' => [
@@ -35,7 +61,7 @@ return [
         'session' => [
             // this is the name of the session cookie used for login on the backend
             'name' => 'advanced-backend',
-        ],
+        ],  
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -67,6 +93,7 @@ return [
             'admin/*',
             'debug/*',
             'gii/*',
+            'builder/*',
             'some-controller/some-action',
             // The actions listed here will be allowed to everyone including guests.
             // So, 'admin/*' should not appear here in the production, of course.
