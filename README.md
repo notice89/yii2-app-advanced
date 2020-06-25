@@ -58,3 +58,7 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+ISSUES encountered
+--MAP mysql port so it can be accessible remotely. https://github.com/docker-library/mysql/issues/95. It is also possible to include this command from the docker file
+
