@@ -30,6 +30,13 @@ services:
       - MYSQL_USER=yii2advanced
       - MYSQL_PASSWORD=yii2advancedP@ssw0rd032611
 
+  composer_installation:
+    container_name: composer_installation
+    image: composer
+    volumes:
+      - ./:/app
+    command: composer install --ignore-platform-reqs
+
   #pgsql:
   #  image: postgres:9.5
   #  environment:

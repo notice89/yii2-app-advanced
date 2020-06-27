@@ -61,4 +61,18 @@ environments/            contains environment-based overrides
 
 ISSUES encountered
 --MAP mysql port so it can be accessible remotely. https://github.com/docker-library/mysql/issues/95. It is also possible to include this command from the docker file
+--AWS ec2 composer update errors PHP Fatal error: Allowed memory size of 1073741824 bytes exhausted (tried to allocate 144115188075867549 bytes) in phar:///bin/composer.phar/src/Composer/Util/RemoteFilesystem.php on line 179 solution is here https://stackoverflow.com/questions/33299302/composer-update-failed-out-of-memory but since we're using docker, i think it should be executed inside the docker instance.
+
+MOST Commonly used comands
+*  sudo df -h .; du -sh -- * | sort -hr 
+	list down all files and folders with disk usage
+*  docker-compose kill
+	Kill all services
+* docker-compose up -d 
+	start all container
+* docker-compose build
+	build all container and apply all the changes if there's any chagnes in the docker file
+
+
+
 
