@@ -74,7 +74,7 @@ MOST Commonly used comands
 	build all container and apply all the changes if there's any chagnes in the docker file
 * docker-compose run --rm backend yii migrate
         Execute migrations
-* docker run -p 3306:3306 --name shopapp-mysql -e MYSQL_ROOT_PASSWORD=myRootpwd32 -d mysql:5.7
+* docker run -p 3306:3306 --name yii2advanced_mysql_1_bridge -e MYSQL_ROOT_PASSWORD=rootP@ssw0rd032611 -d mysql:5.7 
         make mysql accessible from SQLYOG
 *  docker stop $(docker ps -a -q)
 	stops all container 
