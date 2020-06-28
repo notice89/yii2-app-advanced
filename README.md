@@ -82,6 +82,9 @@ MOST Commonly used comands
 	removes all stopped container 
 * docker system prune -a
 	Removeds all unused containers and images
+* docker-compose logs --tail="all" -f 
+	Display all container logs
+
 
 
 DOCKER IMplemenation notes. 
