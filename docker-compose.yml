@@ -24,8 +24,6 @@ services:
 
   mysql:
     image: mysql:5.7
-    ports:
-      - 3306:3306
     environment:
       - MYSQL_ROOT_PASSWORD=rootP@ssw0rd032611
       - MYSQL_DATABASE=yii2advanced

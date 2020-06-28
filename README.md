@@ -76,6 +76,13 @@ MOST Commonly used comands
         Execute migrations
 * docker run -p 3306:3306 --name shopapp-mysql -e MYSQL_ROOT_PASSWORD=myRootpwd32 -d mysql:5.7
         make mysql accessible from SQLYOG
+*  docker stop $(docker ps -a -q)
+	stops all container 
+* docker rm $(docker ps -a -q) 
+	removes all stopped container 
+* docker system prune -a
+	Removeds all unused containers and images
+
 
 DOCKER IMplemenation notes. 
 * No such file or directory. When we see this error upon running yii2 migrate go to common/config/main-local.php and set the host from localhost to mysql. 
