@@ -77,6 +77,11 @@ MOST Commonly used comands
 * docker run -p 3306:3306 --name shopapp-mysql -e MYSQL_ROOT_PASSWORD=myRootpwd32 -d mysql:5.7
         make mysql accessible from SQLYOG
 
+DOCKER IMplemenation notes. 
+* No such file or directory. When we see this error upon running yii2 migrate go to common/config/main-local.php and set the host from localhost to mysql. 
+* Removing Containers will delete all the saved mysql DATA
+
+
 
 
 
