@@ -90,6 +90,9 @@ MOST Commonly used comands
 DOCKER IMplemenation notes. 
 * No such file or directory. When we see this error upon running yii2 migrate go to common/config/main-local.php and set the host from localhost to mysql. 
 * Removing Containers will delete all the saved mysql DATA
+* docker-compose kill to shutdown containers because using docker-compose down or stop may break mysql container 
+* use docker-compose up -d when starting or restarting the the containers because using start may break mysql container. 
+* If docker is not running well, try restarting the docker service or restarting the entire system. 
 
 
 
