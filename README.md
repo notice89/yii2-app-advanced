@@ -93,6 +93,18 @@ DOCKER IMplemenation notes.
 * docker-compose kill to shutdown containers because using docker-compose down or stop may break mysql container 
 * use docker-compose up -d when starting or restarting the the containers because using start may break mysql container. 
 * If docker is not running well, try restarting the docker service or restarting the entire system. 
+* backend error 502 was fixed by adding .htaccess in backend/web/. then adding this line below
+[code]
+Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteEngine on
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php
+[/code]
 
 
 
